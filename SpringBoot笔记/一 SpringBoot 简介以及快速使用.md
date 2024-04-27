@@ -167,7 +167,7 @@ springboot提供的所有启动器的地址：https://docs.spring.io/spring-boot
 通过源码分析，该注解是组合注解。主要为以下注解
 
 * `@SpringBootConfiguration `其源码的重要功能是`@Configuration `  就是注解类。
-* `@EnableAutoConfiguration` 启用Spring Boot的自动配置机制。配置启动器里面的配置。
+* `@EnableAutoConfiguration` 启用Spring Boot的自动加载配置类。包括启动器里面的配置类。
 * `ComponentScan` 扫描包，默认为该类的包的位置（包括子包），扫描spring注解。
 
 
