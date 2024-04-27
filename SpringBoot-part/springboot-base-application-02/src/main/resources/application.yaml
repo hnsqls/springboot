@@ -1,0 +1,17 @@
+# Yaml文件，有层次，可继承，易读，支持复杂类型
+
+#springboot 规定的配置
+server:
+  port: 80
+  servlet:
+    context-path: /boot
+
+
+ls:
+  user:
+    username: root
+    password: 123465
+    gfs:
+      - a
+      - b
+      - c

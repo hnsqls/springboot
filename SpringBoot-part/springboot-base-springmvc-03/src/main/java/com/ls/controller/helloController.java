@@ -1,6 +1,5 @@
 package com.ls.controller;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,11 +7,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @RequestMapping("/hello")
 @Controller
-public class HelloController {
+@ResponseBody
+public class helloController {
 
-    @GetMapping
-    @ResponseBody
-    public String  hi(){
-        return "Hello SpringBoot!";
+    @GetMapping("/one")
+    public String one(){
+        return "Hello One!";
     }
 }
